@@ -48,7 +48,6 @@
 				ABC5FDAA148399C14D64D279 /* Pods-ui-kit-demo.debug.xcconfig */,
 				3E431E58633AA3D44A020E87 /* Pods-ui-kit-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,47 @@
 		A6CA32912AAC27D6002F28E5 /* ui-kit-demo */ = {
 			isa = PBXGroup;
 			children = (
-				A6CA32922AAC27D6002F28E5 /* AppDelegate.swift */,
-				A6CA32942AAC27D6002F28E5 /* SceneDelegate.swift */,
-				A6CA32962AAC27D6002F28E5 /* ViewController.swift */,
-				A6CA32982AAC27D6002F28E5 /* Main.storyboard */,
-				A6CA329B2AAC27D6002F28E5 /* Assets.xcassets */,
-				A6CA329D2AAC27D6002F28E5 /* LaunchScreen.storyboard */,
-				A6CA32A02AAC27D6002F28E5 /* Info.plist */,
+				A6CA32A92AAC2905002F28E5 /* Resources */,
+				A6CA32A82AAC28F2002F28E5 /* Controllers */,
+				A6CA32A72AAC28E8002F28E5 /* Views */,
+				A6CA32A62AAC28C9002F28E5 /* Application */,
 			);
 			path = "ui-kit-demo";
+			sourceTree = "<group>";
+		};
+		A6CA32A62AAC28C9002F28E5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA32922AAC27D6002F28E5 /* AppDelegate.swift */,
+				A6CA32942AAC27D6002F28E5 /* SceneDelegate.swift */,
+				A6CA32A02AAC27D6002F28E5 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A6CA32A72AAC28E8002F28E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA32982AAC27D6002F28E5 /* Main.storyboard */,
+				A6CA329D2AAC27D6002F28E5 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6CA32A82AAC28F2002F28E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA32962AAC27D6002F28E5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A6CA32A92AAC2905002F28E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6CA329B2AAC27D6002F28E5 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,10 +368,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TR2GA38TWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ui-kit-demo/Info.plist";
+				INFOPLIST_FILE = "ui-kit-demo/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -351,8 +385,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.congp.ui-kit-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.congp.test-nfc-reading";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "nfc tag reader a CongP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,10 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TR2GA38TWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ui-kit-demo/Info.plist";
+				INFOPLIST_FILE = "ui-kit-demo/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -379,8 +418,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.congp.ui-kit-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.congp.test-nfc-reading";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "nfc tag reader a CongP";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

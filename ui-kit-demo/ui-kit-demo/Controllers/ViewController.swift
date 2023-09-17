@@ -34,6 +34,7 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view.backgroundColor = .green
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -43,6 +44,7 @@ class ViewController: BaseViewController {
     
     override func configureView() {
         configCameraView()
+        MRActivityIndicator.shared.show(title: "Đang lấy thông tin khách hàng", timeOut: 3, colorBlur: .green.withAlphaComponent(0.2))
         
     }
     
@@ -100,10 +102,10 @@ protocol ViewControllerProtocol {
 
 import SwiftUI
 
-struct ContentView: View {
+fileprivate struct ContentView: View {
     var body: some View{
         VStack{
-            ViewControllerPreview()
+            Text("Lưu thông tin không thành công!")
         }
     }
 }
